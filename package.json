@@ -1,0 +1,28 @@
+{
+  "name": "hexo-aliyun-cdn-refresh",
+  "version": "1.0.0",
+  "description": "在上传到服务器后自动刷新预热阿里云CDN",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "hexo",
+    "aliyun-cdn-refresh"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "files": [
+    "lib/",
+    "index.js"
+  ],
+  "author": "karunari",
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "hexo": "7.0.0"
+  },
+  "dependencies": {
+    "@alicloud/cdn20180510": "^1.0.1",
+    "hexo-log": "^4.1.0",
+    "hexo-fs": "^4.0.0"
+  }
+}
