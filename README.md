@@ -22,3 +22,4 @@ hacr:
     # 刷新目录directory 刷新文件file并在_data中创建refresh-list.json文件内容为["https://byer.top/1.png","https://byer.top/2.png"]
     method: file
 ```
+输入`hexo hacr`手动刷新cdn或者将配置改为`auto_push: true`

@@ -8,7 +8,7 @@ function start(hexo) {
     const pluginConfig = config['hacr'] ?? config.theme_config['hacr'];
     if (!pluginConfig?.enable)
         return;
-    if (pluginConfig['auto_exec']) {
+    if (pluginConfig['auto_push']) {
         hexo.on('deployAfter', async () => {
             await runHacr(hexo, pluginConfig);
         });
