@@ -1,6 +1,6 @@
 # 安装
 ```
-npm install hexo-aliyun-cdn-refresh
+npm i hexo-cdn-refresher
 ```
 # 使用
 在 hexo 或主题的配置文件中添加如下内容即可启用插件：

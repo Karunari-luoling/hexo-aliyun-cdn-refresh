@@ -1,6 +1,6 @@
 {
   "name": "hexo-cdn-refresher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "在上传到服务器后自动刷新预热各种CDN",
   "main": "index.js",
   "scripts": {},
