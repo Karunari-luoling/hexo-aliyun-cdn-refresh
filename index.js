@@ -25,6 +25,7 @@ async function runHacr(hexo, pluginConfig) {
     const accessKeyId = config.Access.accessKeyId
     const accessKeySecret = config.Access.accessKeySecret
     const site = config.site
+    const time = config.RefreshOpts.time
     const type = config.RefreshOpts.type
     const area = undefined
     let method = config.RefreshOpts.method
@@ -48,6 +49,7 @@ async function runHacr(hexo, pluginConfig) {
         refresh: opts => cdnService.refresh(opts),
         both: async opts => {
             await cdnService.refresh(opts);
+            await new Promise(resolve => setTimeout(resolve, time));
             await cdnService.push(opts);
         }
     };
